@@ -1,0 +1,416 @@
+[
+    {
+        "name": "Animal Magnestism",
+        "slug": "animal-magnetism",
+        "members": true,
+        "requirements": {
+            "skills": [
+                {
+                    "slayer": 18,
+                    "crafting": 19,
+                    "ranged": 30,
+                    "woodcutting": 35
+                }
+            ],
+            "quests": [
+                "the-restless-ghost",
+                "ernest-the-chicken",
+                "priest-in-peril"
+            ]
+        }
+    },
+    {
+        "name": "Another Slice of H.A.M.",
+        "slug": "another-slice-of-ham",
+        "members": true,
+        "requirements": {
+            "skills": {
+                    "attack": 15,
+                    "prayer": 25
+            },
+            "quests": [
+                "death-to-the-dorgeshuun",
+                "the-giant-dwarf",
+                "the-digsite"
+            ]
+        }
+    },
+    {
+        "name": "Between A Rock...",
+        "slug": "between-a-rock",
+        "members": true,
+        "requirements": {
+            "skills": {
+                    "defence": 30,
+                    "mining": 40,
+                    "smithing": 50
+            },
+            "quests": [
+                "dwarf-cannon",
+                "fishing-contest"
+            ]
+        }
+    },
+    {
+        "name": "Big Chompy Bird Hunting",
+        "slug": "big-chompy-bird-hunting",
+        "members": true,
+        "requirements": {
+            "skills": {
+                    "fletching": 5,
+                    "cooking": 30,
+                    "ranged": 30
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Biohazard",
+        "slug": "biohazard",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "plague-city"
+            ]
+        }
+    },
+    {
+        "name": "Black Knights' Fortress",
+        "slug": "black-knights-fortress",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Cabin Fever",
+        "slug": "cabin-fever",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 42,
+                "crafting": 45,
+                "smithing": 50,
+                "ranged": 40
+            },
+            "quests": [
+                "pirates-treasure",
+                "rum-deal"
+            ]
+        }
+    },
+    {
+        "name": "Clock Tower",
+        "slug": "clock-tower",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Cold War",
+        "slug": "cold-war",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "hunter": 10,
+                "agility": 30,
+                "crafting": 30,
+                "construction": 34
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Contact!",
+        "slug": "contact",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "prince-ali-rescue",
+                "icthlarins-little-helper"
+            ]
+        }
+    },
+    {
+        "name": "Cook's Assistant",
+        "slug": "cooks-assistant",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Creature of Fenkenstrain",
+        "slug": "creature-of-fenkenstrain",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 20,
+                "thieving": 25
+            },
+            "quests": [
+                "priest-in-peril",
+                "the-restless-ghost"
+            ]
+        }
+    },
+    {
+        "name": "Darkness of Hallowvale",
+        "slug": "darkness-of-hallowvale",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "construction": 5,
+                "mining": 20,
+                "thieving": 22,
+                "agility": 26,
+                "crafting": 32,
+                "magic": 33,
+                "strength": 40
+            },
+            "quests": [
+                "in-aid-of-the-myreque"
+            ]
+        }
+    },
+    {
+        "name": "Death Plateau",
+        "slug": "death-plateau",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Death to the Dorgeshuun",
+        "slug": "death-to-the-dorgeshuun",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 23,
+                "thieving": 23
+            },
+            "quests": [
+                "the-lost-tribe"
+            ]
+        }
+    },
+    {
+        "name": "Demon Slayer",
+        "slug": "demon-slayer",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Desert Treasure",
+        "slug": "desert-treasure",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "thieving": 53,
+                "firemaking": 50,
+                "slayer": 10,
+                "magic": 50
+            },
+            "quests": [
+                "the-digsite",
+                "temple-of-ikov",
+                "the-tourist-trap",
+                "troll-stronghold",
+                "priest-in-peril",
+                "waterfall-quest"
+            ]
+        }
+    },
+    {
+        "name": "Devious Minds",
+        "slug": "devious-minds",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "smithing": 65,
+                "runecrafting": 50,
+                "fletching": 50
+            },
+            "quests": [
+                "wanted",
+                "troll-stronghold",
+                "dorics-quest"
+            ]
+        }
+    },
+    {
+        "name": "The Digsite",
+        "slug": "the-digsite",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 10,
+                "herblore": 10,
+                "thieving": 25
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Doric's Quest",
+        "slug": "dorics-quest",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Dragon Slayer",
+        "slug": "dragon-slayer",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Dream Mentor",
+        "slug": "dream-mentor",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "lunar-diplomacy",
+                "eadgars-ruse"
+            ]
+        }
+    },
+    {
+        "name": "Druidic Ritual",
+        "slug": "druidic-ritual",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Dwarf Cannon",
+        "slug": "dwarf-cannon",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 20
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Eadgar's Ruse",
+        "slug": "eadgars-ruse",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "herblore": 31
+            },
+            "quests": [
+                "troll-stronghold"
+            ]
+        }
+    },
+    {
+        "name": "Eagle's Peak",
+        "slug": "eagles-peak",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "hunter": 27
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Elemental Workshop I",
+        "slug": "elemental-workshop-1",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "mining": 20,
+                "smithing": 20,
+                "crafting": 20
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Elemental Workshop II",
+        "slug": "elemental-workshop-2",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "magic": 20,
+                "smithing": 30
+            },
+            "quests": [
+                "elemental-workshop-1"
+            ]
+        }
+    },
+    {
+        "name": "Enakhra's Lament",
+        "slug": "enakhras-lament",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 50,
+                "firemaking": 45,
+                "prayer": 43,
+                "magic": 39
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Enlightened Journey",
+        "slug": "enlightened-journey",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "firemaking": 20,
+                "farming": 30,
+                "crafting": 36
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Ernest the Chicken",
+        "slug": "ernest-the-chicken",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "The Eyes of Glouphrie",
+        "slug": "the-eyes-of-glouphrie",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "construction": 5,
+                "magic": 46
+            },
+            "quests": [
+                "the-grand-tree"
+            ]
+        }
+    }
+]
