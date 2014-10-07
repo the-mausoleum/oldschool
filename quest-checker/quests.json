@@ -643,7 +643,1002 @@
                 "woodcutting": 71  
             },
             "quests": [
-                "witches-house"
+                "witchs-house"
+            ]
+        }
+    },
+    {
+        "name": "The Hand in the Sand",
+        "slug": "the-hand-in-the-sand",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "thieving": 17,
+                "crafting": 49
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Haunted Mine",
+        "slug": "haunted-mine",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 15,
+                "crafting": 35
+            },
+            "quests": [
+                "priest-in-peril"
+            ]
+        }
+    },
+    {
+        "name": "Hazeel Cult",
+        "slug": "hazeel-cult",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Heroes Quest",
+        "slug": "heroes-quest",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "cooking": 53,
+                "fishing": 53,
+                "herblore": 25,
+                "mining": 50
+            },
+            "quests": [
+                "shield-of-arrav",
+                "lost-city",
+                "dragon-slayer",
+                "merlins-crystal"
+            ]
+        }
+    },
+    {
+        "name": "Holy Grail",
+        "slug": "holy-grail",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "merlins-crystal"
+            ]
+        }
+    },
+    {
+        "name": "Horror from the Deep",
+        "slug": "horror-from-the-deep",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 35
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Icthlarin's Little Helper",
+        "slug": "icthlarins-little-helper",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "gertrudes-cat"
+            ]
+        }
+    },
+    {
+        "name": "Imp Catcher",
+        "slug": "imp-catcher",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "In Aid of the Myreque",
+        "slug": "in-aid-of-the-myreque",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 25,
+                "mining": 15,
+                "magic": 7
+            },
+            "quests": [
+                "in-search-of-the-myreque",
+                "nature-spirit"
+            ]
+        }
+    },
+    {
+        "name": "In Search of the Myreque",
+        "slug": "in-search-of-the-myreque",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 25
+            },
+            "quests": [
+                "nature-spirit"
+            ]
+        }
+    },
+    {
+        "name": "Jungle Potion",
+        "slug": "jungle-potion",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "herblore": 3
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "King's Ransom",
+        "slug": "kings-ransom",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "magic": 45,
+                "defence": 65
+            },
+            "quests": [
+                "black-knights-fortress",
+                "holy-grail",
+                "murder-mystery",
+                "one-small-favour",
+                "merlins-crystal"
+            ]
+        }
+    },
+    {
+        "name": "The Knight's Sword",
+        "slug": "the-knights-sword",
+        "members": false,
+        "requirements": {
+            "skills": {
+                "mining": 10
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Legends' Quest",
+        "slug": "legends-quest",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 50,
+                "crafting": 50,
+                "herblore": 45,
+                "magic": 56,
+                "mining": 52,
+                "prayer": 42,
+                "smithing": 50,
+                "strength": 50,
+                "thieving": 50,
+                "woodcutting": 50
+            },
+            "quests": [
+                "family-crest",
+                "heroes-quest",
+                "shilo-village",
+                "underground-pass",
+                "waterfall-quest"
+            ]
+        }
+    },
+    {
+        "name": "Lost City",
+        "slug": "lost-city",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 31,
+                "woodcutting": 36
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "The Lost Tribe",
+        "slug": "the-lost-tribe",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 13,
+                "thieving": 13,
+                "mining": 17
+            },
+            "quests": [
+                "goblin-diplomacy",
+                "rune-mysteries"
+            ]
+        }
+    },
+    {
+        "name": "Lunar Diplomacy",
+        "slug": "lunar-diplomacy",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 61,
+                "defence": 40,
+                "firemaking": 49,
+                "herblore": 5,
+                "magic": 65,
+                "mining": 60,
+                "woodcutting": 55
+            },
+            "quests": [
+                "lost-city",
+                "the-fremennik-trials",
+                "rune-mysteries",
+                "shilo-village"
+            ]
+        }
+    },
+    {
+        "name": "Making History",
+        "slug": "making-history",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 20,
+                "mining": 40,
+                "smithing": 40
+            },
+            "quests": [
+                "priest-in-peril",
+                "the-restless-ghost"
+            ]
+        }
+    },
+    {
+        "name": "Merlin's Crystal",
+        "slug": "merlins-crystal",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Monkey Madness",
+        "slug": "monkey-madness",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "the-grand-tree",
+                "tree-gnome-village"
+            ]
+        }
+    },
+    {
+        "name": "Monk's Friend",
+        "slug": "monks-friend",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Mountain Daughter",
+        "slug": "mountain-daughter",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 20
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Mourning's Ends Part I",
+        "slug": "mournings-ends-part-1",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "ranged": 60,
+                "thieving": 50
+            },
+            "quests": [
+                "roving-elves",
+                "big-chompy-bird-hunting",
+                "sheep-herder"
+            ]
+        }
+    },
+    {
+        "name": "Mourning's Ends Part II",
+        "slug": "mournings-ends-part-2",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "mournings-ends-part-1"
+            ]
+        }
+    },
+    {
+        "name": "Murder Mystery",
+        "slug": "murder-mystery",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "My Arm's Big Adventure",
+        "slug": "",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "woodcutting": 10,
+                "farming": 29
+            },
+            "quests": [
+                "eadgars-ruse",
+                "the-feud",
+                "jungle-potion"
+            ]
+        }
+    },
+    {
+        "name": "Nature Spirit",
+        "slug": "nature-spirit",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 18
+            },
+            "quests": [
+                "priest-in-peril",
+                "the-restless-ghost"
+            ]
+        }
+    },
+    {
+        "name": "Observatory Quest",
+        "slug": "observatory-quest",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 10
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Olaf's Quest",
+        "slug": "olafs-quest",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "firemaking": 40,
+                "woodcutting": 50
+            },
+            "quests": [
+                "the-fremennik-trials"
+            ]
+        }
+    },
+    {
+        "name": "One Small Favour",
+        "slug": "one-small-favour",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 36,
+                "crafting": 25,
+                "herblore": 18,
+                "smithing": 30
+            },
+            "quests": [
+                "rune-mysteries",
+                "shilo-village",
+                "druidic-ritual"
+            ]
+        }
+    },
+    {
+        "name": "Pirate's Treasure",
+        "slug": "pirates-treasure",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Plague City",
+        "slug": "plague-city",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Priest in Peril",
+        "slug": "priest-in-peril",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Prince Ali Rescue",
+        "slug": "prince-ali-rescue",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Rag and Bone Man",
+        "slug": "rag-and-bone-man",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Rat Catchers",
+        "slug": "",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "icthlarins-little-helper",
+                "the-giant-dwarf"
+            ]
+        }
+    },
+    {
+        "name": "Recipe for Disaster",
+        "slug": "recipe-for-disaster",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "cooking": 70,
+                "agility": 48
+            },
+            "quests": [
+                "cooks-assistant",
+                "fishing-contest",
+                "goblin-diplomacy",
+                "big-chompy-bird-hunting",
+                "biohazard",
+                "demon-slayer",
+                "murder-mystery",
+                "nature-spirit",
+                "priest-in-peril",
+                "the-restless-ghost",
+                "witchs-house",
+                "gertrudes-cat",
+                "shadow-of-the-storm",
+                "lost-city",
+                "legends-quest",
+                "monkey-madness",
+                "desert-treasure",
+                "horror-from-the-deep"
+            ]
+        }
+    },
+    {
+        "name": "Recruitment Drive",
+        "slug": "recruitment-drive",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "black-knights-fortress",
+                "druidic-ritual"
+            ]
+        }
+    },
+    {
+        "name": "Regicide",
+        "slug": "regicide",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 56
+            },
+            "quests": [
+                "underground-pass"
+            ]
+        }
+    },
+    {
+        "name": "The Restless Ghost",
+        "slug": "the-restless-ghost",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Romeo & Juliet",
+        "slug": "romeo-and-juliet",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Roving Elves",
+        "slug": "roving-elves",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "regicide",
+                "waterfall-quest"
+            ]
+        }
+    },
+    {
+        "name": "Royal Trouble",
+        "slug": "royal-trouble",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 40,
+                "slayer": 40
+            },
+            "quests": [
+                "throne-of-miscellania"
+            ]
+        }
+    },
+    {
+        "name": "Rum Deal",
+        "slug": "rum-deal",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 42,
+                "fishing": 50,
+                "farming": 40,
+                "prayer": 47,
+                "slayer": 42
+            },
+            "quests": [
+                "zogre-flesh-eaters"
+            ]
+        }
+    },
+    {
+        "name": "Rune Mysteries",
+        "slug": "rune-mysteries",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Scorpion Catcher",
+        "slug": "scorpion-catcher",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "prayer": 31
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Sea Slug",
+        "slug": "sea-slug",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "firemaking": 30
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Shades of Mort'ton",
+        "slug": "shades-of-mortton",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 20,
+                "herblore": 15,
+                "firemaking": 5
+            },
+            "quests": [
+                "priest-in-peril"
+            ]
+        }
+    },
+    {
+        "name": "Shadow of the Storm",
+        "slug": "shadow-of-the-storm",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 30
+            },
+            "quests": [
+                "demon-slayer",
+                "the-golem"
+            ]
+        }
+    },
+    {
+        "name": "Sheep Herder",
+        "slug": "sheep-herder",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Sheep Shearer",
+        "slug": "sheep-shearer",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Shield of Arrav",
+        "slug": "shield-of-arrav",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Shilo Village",
+        "slug": "shilo-village",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 20,
+                "agility": 32,
+                "smithing": 4
+            },
+            "quests": [
+                "jungle-potion"
+            ]
+        }
+    },
+    {
+        "name": "The Slug Menace",
+        "slug": "the-slug-menace",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 30,
+                "runecrafting": 30,
+                "slayer": 30,
+                "thieving": 30
+            },
+            "quests": [
+                "sea-slug",
+                "wanted"
+            ]
+        }
+    },
+    {
+        "name": "A Soul's Bane",
+        "slug": "a-souls-bane",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Spirits of the Elid",
+        "slug": "spirits-of-the-elid",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "magic": 33,
+                "ranged": 37,
+                "mining": 37,
+                "thieving": 37
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Swan Song",
+        "slug": "swan-song",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "magic": 66,
+                "cooking": 62,
+                "fishing": 62,
+                "smithing": 45,
+                "firemaking": 42,
+                "crafting": 40
+            },
+            "quests": [
+                "one-small-favour",
+                "garden-of-tranquillity"
+            ]
+        }
+    },
+    {
+        "name": "Tai Bwo Wannai Trio",
+        "slug": "tai-bwo-wannai-trio",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 32,
+                "cooking": 30,
+                "fishing": 5
+            },
+            "quests": [
+                "jungle-potion"
+            ]
+        }
+    },
+    {
+        "name": "A Tail of Two Cats",
+        "slug": "a-tail-of-two-cats",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "icthlarins-little-helper"
+            ]
+        }
+    },
+    {
+        "name": "Tears of Guthix",
+        "slug": "tears-of-guthix",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "firemaking": 49,
+                "crafting": 20,
+                "mining": 20
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Temple of Ikov",
+        "slug": "temple-of-ikov",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "thieving": 42,
+                "ranged": 40
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "",
+        "slug": "",
+        "members": true,
+        "requirements": {
+            "skills": {
+
+            },
+            "quests": [
+            
+            ]
+        }
+    },
+    {
+        "name": "Throne of Miscellania",
+        "slug": "throne-of-miscellania",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "heroes-quest",
+                "the-fremennik-trials"
+            ]
+        }
+    },
+    {
+        "name": "The Tourist Trap",
+        "slug": "the-tourist-trap",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "fletching": 10,
+                "smithing": 20
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Tower of Life",
+        "slug": "tower-of-life",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "construction": 10
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Tree Gnome Village",
+        "slug": "tree-gnome-village",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Tribal Totem",
+        "slug": "tribal-totem",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "thieving": 21
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Troll Romance",
+        "slug": "troll-romance",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 28
+            },
+            "quests": [
+                "death-plateau",
+                "troll-stronghold"
+            ]
+        }
+    },
+    {
+        "name": "Troll Stronghold",
+        "slug": "troll-stronghold",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 15
+            },
+            "quests": [
+                "death-plateau"
+            ]
+        }
+    },
+    {
+        "name": "Underground Pass",
+        "slug": "underground-pass",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "ranged": 25
+            },
+            "quests": [
+                "biohazard"
+            ]
+        }
+    },
+    {
+        "name": "Vampire Slayer",
+        "slug": "vampire-slayer",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Wanted!",
+        "slug": "wanted",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "recruitment-drive",
+                "the-lost-tribe",
+                "rune-mysteries",
+                "priest-in-peril"
+            ]
+        }
+    },
+    {
+        "name": "Watchtower",
+        "slug": "watchtower",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "herblore": 14,
+                "magic": 15,
+                "thieving": 15,
+                "agility": 25,
+                "mining": 40
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Waterfall Quest",
+        "slug": "waterfall-quest",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "What Lies Below",
+        "slug": "what-lies-below",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "runecrafting": 35
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Witch's House",
+        "slug": "witchs-house",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Witch's Potion",
+        "slug": "witchs-potion",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Zogre Flesh Eaters",
+        "slug": "zogre-flesh-eaters",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "smithing": 4,
+                "herblore": 8,
+                "strength": 20,
+                "fletching": 30,
+                "ranged": 30
+            },
+            "quests": [
+                "big-chompy-bird-hunting",
+                "jungle-potion"
             ]
         }
     }
