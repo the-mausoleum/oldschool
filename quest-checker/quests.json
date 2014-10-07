@@ -412,5 +412,239 @@
                 "the-grand-tree"
             ]
         }
+    },
+    {
+        "name": "Fairytale I - Growing Pains",
+        "slug": "fairytale-1-growing-pains",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": [
+                "lost-city",
+                "nature-spirit"
+            ]
+        }
+    },
+    {
+        "name": "Fairytale II - Cure a Queen",
+        "slug": "fairytale-2-cure-a-queen",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "thieving": 40,
+                "farming": 49,
+                "herblore": 57
+            },
+            "quests": [
+                "fairytale-1-growing-pains"
+            ]
+        }
+    },
+    {
+        "name": "Family Crest",
+        "slug": "family-crest",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "mining": 40,
+                "smithing": 40,
+                "magic": 59,
+                "crafting": 40
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "The Feud",
+        "slug": "the-feud",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "thieving": 30
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Fight Arena",
+        "slug": "fight-arena",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Fishing Contest",
+        "slug": "fishing-contest",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "fishing": 10
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Forgettable Tale of a Drunken Dwarf",
+        "slug": "forgettable-tale-of-a-drunken-dwarf",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "cooking": 22,
+                "farming": 17
+            },
+            "quests": [
+                "the-giant-dwarf",
+                "fishing-contest"
+            ]
+        }
+    },
+    {
+        "name": "The Fremennik Isles",
+        "slug": "the-fremennik-isles",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "construction": 20,
+                "crafting": 46,
+                "agility": 40,
+                "woodcutting": 56
+            },
+            "quests": [
+                "the-fremennik-trials"
+            ]
+        }
+    },
+    {
+        "name": "The Fremennik Trials",
+        "slug": "",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "fletching": 25,
+                "woodcutting": 40,
+                "crafting": 40
+            },
+            "quests": [
+                "the-fremennik-trials"
+            ]
+        }
+    },
+    {
+        "name": "Garden of Tranquillity",
+        "slug": "garden-of-tranquillity",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "farming": 25
+            },
+            "quests": [
+                "creature-of-fenkenstrain"
+            ]
+        }
+    },
+    {
+        "name": "Gertrude's Cat",
+        "slug": "gertrudes-cat",
+        "members": true,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "Ghosts Ahoy",
+        "slug": "ghosts-ahoy",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 25,
+                "cooking": 20
+            },
+            "quests": [
+                "priest-in-peril"
+            ]
+        }
+    },
+    {
+        "name": "The Giant Dwarf",
+        "slug": "the-giant-dwarf",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 12,
+                "firemaking": 16,
+                "magic": 33,
+                "thieving": 14
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "Goblin Diplomacy",
+        "slug": "goblin-diplomacy",
+        "members": false,
+        "requirements": {
+            "skills": {},
+            "quests": []
+        }
+    },
+    {
+        "name": "The Golem",
+        "slug": "the-golem",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 20,
+                "thieving": 25
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "The Grand Tree",
+        "slug": "the-grand-tree",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "agility": 25
+            },
+            "quests": []
+        }
+    },
+    {
+        "name": "The Great Brain Robbery",
+        "slug": "the-great-brain-robbery",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "crafting": 16,
+                "construction": 30,
+                "prayer": 50
+            },
+            "quests": [
+                "creature-of-fenkenstrain",
+                "cabin-fever",
+                "rum-deal"
+            ]
+        }
+    },
+    {
+        "name": "Grim Tales",
+        "slug": "grim-tales",
+        "members": true,
+        "requirements": {
+            "skills": {
+                "farming": 45,
+                "herblore": 52,
+                "thieving": 58,
+                "agility": 59,
+                "woodcutting": 71  
+            },
+            "quests": [
+                "witches-house"
+            ]
+        }
     }
 ]
