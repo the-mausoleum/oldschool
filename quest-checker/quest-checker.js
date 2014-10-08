@@ -61,7 +61,7 @@ function grep(array, key, value) {
             return array[i];
         }
     }
-};
+}
 
 var XP = function () {
     this.chart = {};
@@ -89,7 +89,7 @@ var XP = function () {
     };
 
     this.atLevel = function (level) {
-        return this.chart[level]['xp'];
+        return this.chart[level].xp;
     };
 
     this.init();
