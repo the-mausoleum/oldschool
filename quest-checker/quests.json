@@ -4,14 +4,12 @@
         "slug": "animal-magnetism",
         "members": true,
         "requirements": {
-            "skills": [
-                {
+            "skills": {
                     "slayer": 18,
                     "crafting": 19,
                     "ranged": 30,
                     "woodcutting": 35
-                }
-            ],
+            },
             "quests": [
                 "the-restless-ghost",
                 "ernest-the-chicken",
@@ -41,9 +39,9 @@
         "members": true,
         "requirements": {
             "skills": {
-                    "defence": 30,
-                    "mining": 40,
-                    "smithing": 50
+                "defence": 30,
+                "mining": 40,
+                "smithing": 50
             },
             "quests": [
                 "dwarf-cannon",
@@ -518,7 +516,7 @@
     },
     {
         "name": "The Fremennik Trials",
-        "slug": "",
+        "slug": "the-fremennik-trials",
         "members": true,
         "requirements": {
             "skills": {
@@ -983,7 +981,7 @@
     },
     {
         "name": "My Arm's Big Adventure",
-        "slug": "",
+        "slug": "my-arms-big-adventure",
         "members": true,
         "requirements": {
             "skills": {
@@ -1101,7 +1099,7 @@
     },
     {
         "name": "Rat Catchers",
-        "slug": "",
+        "slug": "rat-catchers",
         "members": true,
         "requirements": {
             "skills": {},
@@ -1438,19 +1436,6 @@
                 "ranged": 40
             },
             "quests": []
-        }
-    },
-    {
-        "name": "",
-        "slug": "",
-        "members": true,
-        "requirements": {
-            "skills": {
-
-            },
-            "quests": [
-            
-            ]
         }
     },
     {
