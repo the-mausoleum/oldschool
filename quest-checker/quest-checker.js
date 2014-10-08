@@ -128,7 +128,7 @@ var Quests = function (questList, stats) {
         }
 
         for (var i in questReqs) {
-            if (!this.completed[i]) {
+            if (!this.completed[questReqs[i]]) {
                 hasQuests = false;
             }
         }
