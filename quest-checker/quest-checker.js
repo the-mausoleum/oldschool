@@ -28,11 +28,13 @@ http.get(hiscoresUrl + playerName, function (res) {
 
             var tracker = new Quests(questList, stats);
 
-            tracker.completeQuests(['rune-mysteries', 'imp-catcher']);
-
-            console.log(tracker.computeTotalRequirements('legends-quest'));
+            tracker.completeQuests(['black-knights-fortress', 'cooks-assistant', 'creature-of-fenkenstrain', 'demon-slayer', 'druidic-ritual', 'dorics-quest', 'the-digsite', 'dragon-slayer', 'elemental-workshop-1', 'elemental-workshop-2', 'fishing-contest', 'goblin-diplomacy', 'imp-catcher', 'the-knights-sword', 'pirates-treasure', 'priest-in-peril', 'prince-ali-rescue', 'the-restless-ghost', 'romeo-and-juliet', 'rune-mysteries', 'sheep-shearer', 'a-souls-bane', 'tears-of-guthix', 'vampire-slayer', 'waterfall-quest', 'witchs-potion', 'nature-spirit']);
 
             console.log(tracker.recommendNext());
+
+            var xp = new XP();
+
+            console.log(xp.forLevel(99, stats.woodcutting.xp));
         });
     });
 }).end();
@@ -90,6 +92,10 @@ var XP = function () {
 
     this.atLevel = function (level) {
         return this.chart[level].xp;
+    };
+
+    this.forLevel = function (level, currExp) {
+        return this.chart[level].xp - currExp;
     };
 
     this.init();
@@ -232,7 +238,7 @@ var Quests = function (questList, stats) {
             for (var j in skillReqs) {
 
                 if (skillReqs[j] > this.stats[j].level) {
-                    neededExp[this.list[i].slug] += xp.atLevel(skillReqs[j]) - this.stats[j].xp;
+                    neededExp[this.list[i].slug] += xp.forLevel(skillReqs[j], this.stats[j].xp);
                 }
             }
         }
