@@ -26,9 +26,12 @@ http.get(hiscoresUrl + playerName, function (res) {
 
             var questList = JSON.parse(data);
 
-            var tracker = new Quests(questList);
+            var tracker = new Quests(questList, stats);
 
-            console.log(tracker.findAvailable(stats));
+            tracker.completeQuests(['vampire-slayer', 'pirates-treasure', 'death-plateau'])
+            tracker.completeQuest('lost-city');
+
+            console.log(tracker.findAvailable());
         });
     });
 }).end();
@@ -84,27 +87,62 @@ function grep (array, key, value) {
     }
 };
 
-var Quests = function (questList) {
+var Quests = function (questList, stats) {
     this.list = questList;
+    this.stats = stats;
+    this.completed = {};
 
-    this.findAvailable = function (stats) {
+    this.findAvailable = function () {
         var available = [];
 
         for (var i in this.list) {
             var canDo = true;
             var skillReqs = this.list[i].requirements.skills;
+            var questReqs = this.list[i].requirements.quests;
 
-            for (var j in skillReqs) {
-                if (stats[j].level < skillReqs) {
-                    canDo = false;
-                }
+            if (this.completed[this.list[i].slug]) {
+                continue;
             }
 
-            if (canDo) {
+            if (this.hasRequirements(this.list[i].slug)) {
                 available.push(this.list[i].slug);
             }
         }
 
         return available;
+    };
+
+    this.hasRequirements = function (questName) {
+        var hasStats = true;
+        var hasQuests = true;
+
+        var quest = grep(this.list, 'slug', questName) || grep(this.list, 'name', questName);
+
+        var skillReqs = quest.requirements.skills;
+        var questReqs = quest.requirements.quests;
+
+        for (var i in skillReqs) {
+            if (this.stats[i].level < skillReqs[i]) {
+                hasStats = false;
+            }
+        }
+
+        for (var i in questReqs) {
+            if (!this.completed[i]) {
+                hasQuests = false;
+            }
+        }
+
+        return hasStats && hasQuests;
+    };
+
+    this.completeQuest = function (quest) {
+        this.completeQuests([quest]);
+    };
+
+    this.completeQuests = function (quests) {
+        for (var i in quests) {
+            this.completed[quests[i]] = true;
+        }
     };
 };
