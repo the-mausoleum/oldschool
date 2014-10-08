@@ -191,7 +191,7 @@ var Quests = function (questList, stats) {
     };
 
     this.hasRequirements = function (questName) {
-        return this.hasRequirements(questName) && this.hasQuestRequirements(questName);
+        return this.hasSkillRequirements(questName) && this.hasQuestRequirements(questName);
     };
 
     this.completeQuest = function (quest) {
