@@ -24,9 +24,7 @@ http.get(hiscoresUrl + playerName, function (res) {
                 return;
             }
 
-            var questList = JSON.parse(data);
-
-            var tracker = new Quests(questList, stats);
+            var tracker = new Quests(JSON.parse(data), stats);
 
             tracker.completeQuests(['black-knights-fortress', 'cooks-assistant', 'creature-of-fenkenstrain', 'demon-slayer', 'druidic-ritual', 'dorics-quest', 'the-digsite', 'dragon-slayer', 'elemental-workshop-1', 'elemental-workshop-2', 'fishing-contest', 'goblin-diplomacy', 'imp-catcher', 'the-knights-sword', 'pirates-treasure', 'priest-in-peril', 'prince-ali-rescue', 'the-restless-ghost', 'romeo-and-juliet', 'rune-mysteries', 'sheep-shearer', 'a-souls-bane', 'tears-of-guthix', 'vampire-slayer', 'waterfall-quest', 'witchs-potion', 'nature-spirit']);
 
