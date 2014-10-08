@@ -28,8 +28,11 @@ http.get(hiscoresUrl + playerName, function (res) {
 
             var tracker = new Quests(questList, stats);
 
-            tracker.completeQuests(['vampire-slayer', 'pirates-treasure', 'death-plateau'])
-            tracker.completeQuest('lost-city');
+            tracker.completeQuests(['death-plateau', 'troll-stronghold'])
+
+            console.log(tracker.listRequirements('troll-romance'));
+
+            console.log(tracker.hasRequirements('troll-romance'));
 
             console.log(tracker.findAvailable());
         });
@@ -92,6 +95,10 @@ var Quests = function (questList, stats) {
     this.stats = stats;
     this.completed = {};
 
+    this.findQuest = function (questName) {
+        return grep(this.list, 'slug', questName) || grep(this.list, 'name', questName);
+    };
+
     this.findAvailable = function () {
         var available = [];
 
@@ -112,11 +119,17 @@ var Quests = function (questList, stats) {
         return available;
     };
 
+    this.listRequirements = function (questName) {
+        var quest = this.findQuest(questName);
+
+        return quest.requirements;
+    };
+
     this.hasRequirements = function (questName) {
         var hasStats = true;
         var hasQuests = true;
 
-        var quest = grep(this.list, 'slug', questName) || grep(this.list, 'name', questName);
+        var quest = this.findQuest(questName);
 
         var skillReqs = quest.requirements.skills;
         var questReqs = quest.requirements.quests;
