@@ -1,0 +1,22 @@
+{
+  "name": "oldschool",
+  "version": "0.0.1",
+  "description": "oldschool =========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxdeviant/oldschool.git"
+  },
+  "author": "Marshall Bowers <elliott.codes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxdeviant/oldschool/issues"
+  },
+  "homepage": "https://github.com/maxdeviant/oldschool",
+  "devDependencies": {
+    "gulp": "^3.8.8"
+  }
+}
