@@ -28,10 +28,7 @@ http.get(hiscoresUrl + playerName, function (res) {
 
             var tracker = new Quests(questList, stats);
 
-            tracker.completeQuests([
-                'rune-mysteries',
-                'imp-catcher'
-            ]);
+            tracker.completeQuests(['rune-mysteries', 'imp-catcher']);
 
             console.log(tracker.computeTotalRequirements('legends-quest'));
 
@@ -43,32 +40,7 @@ http.get(hiscoresUrl + playerName, function (res) {
 function extractStats(raw) {
     var stats = {};
 
-    var skills = [
-        'overall',
-        'attack',
-        'defence',
-        'strength',
-        'constitution',
-        'ranged',
-        'prayer',
-        'magic',
-        'cooking',
-        'woodcutting',
-        'fletching',
-        'fishing',
-        'firemaking',
-        'crafting',
-        'smithing',
-        'mining',
-        'herblore',
-        'agility',
-        'thieving',
-        'slayer',
-        'farming',
-        'runecrafting',
-        'hunter',
-        'construction'
-    ];
+    var skills = ['overall', 'attack', 'defence', 'strength', 'constitution', 'ranged', 'prayer', 'magic', 'cooking', 'woodcutting', 'fletching', 'fishing', 'firemaking', 'crafting', 'smithing', 'mining', 'herblore', 'agility', 'thieving', 'slayer', 'farming', 'runecrafting', 'hunter', 'construction'];
 
     for (var i in skills) {
         var row = raw[i].split(',');
@@ -83,7 +55,7 @@ function extractStats(raw) {
     return stats;
 }
 
-function grep (array, key, value) {
+function grep(array, key, value) {
     for (var i in array) {
         if (array[i][key] === value) {
             return array[i];
