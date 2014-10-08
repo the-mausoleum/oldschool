@@ -15,7 +15,7 @@ gulp.task('lint', function () {
 gulp.task('beautify', function () {
     gulp.src(path)
         .pipe(beautify({ indentSize: 4 }))
-        .pipe(gulp.dest('js'));
+        .pipe(gulp.dest('quest-checker'));
 });
 
 gulp.task('watch', function () {
