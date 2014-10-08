@@ -28,13 +28,9 @@ http.get(hiscoresUrl + playerName, function (res) {
 
             var tracker = new Quests(questList, stats);
 
-            tracker.completeQuests(['death-plateau', 'troll-stronghold'])
+            tracker.completeQuests(['death-plateau', 'troll-stronghold']);
 
-            console.log(tracker.listRequirements('troll-romance'));
-
-            console.log(tracker.hasRequirements('troll-romance'));
-
-            console.log(tracker.findAvailable());
+            console.log(tracker.getCompleted());
         });
     });
 }).end();
@@ -93,7 +89,11 @@ function grep (array, key, value) {
 var Quests = function (questList, stats) {
     this.list = questList;
     this.stats = stats;
-    this.completed = {};
+    this.completed = {
+        count: 0,
+        percent: 0,
+        list: {}
+    };
 
     this.findQuest = function (questName) {
         return grep(this.list, 'slug', questName) || grep(this.list, 'name', questName);
@@ -107,7 +107,7 @@ var Quests = function (questList, stats) {
             var skillReqs = this.list[i].requirements.skills;
             var questReqs = this.list[i].requirements.quests;
 
-            if (this.completed[this.list[i].slug]) {
+            if (this.completed.list[this.list[i].slug]) {
                 continue;
             }
 
@@ -141,7 +141,7 @@ var Quests = function (questList, stats) {
         }
 
         for (var i in questReqs) {
-            if (!this.completed[questReqs[i]]) {
+            if (!this.completed.list[questReqs[i]]) {
                 hasQuests = false;
             }
         }
@@ -155,7 +155,16 @@ var Quests = function (questList, stats) {
 
     this.completeQuests = function (quests) {
         for (var i in quests) {
-            this.completed[quests[i]] = true;
+            this.completed.list[quests[i]] = true;
+            this.completed.count++;
         }
+    };
+
+    this.getCompleted = function () {
+        return {
+            count: this.completed.count,
+            percent: Math.round((this.completed.count / this.list.length) * 100),
+            quests: Object.keys(this.completed.list)
+        };
     };
 };
