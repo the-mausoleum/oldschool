@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/maxdeviant/oldschool",
   "devDependencies": {
-    "gulp": "^3.8.8"
+    "gulp": "^3.8.8",
+    "gulp-beautify": "^1.1.0",
+    "gulp-jshint": "^1.8.5"
   }
 }
