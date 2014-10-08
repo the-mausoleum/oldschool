@@ -28,9 +28,14 @@ http.get(hiscoresUrl + playerName, function (res) {
 
             var tracker = new Quests(questList, stats);
 
-            tracker.completeQuests(['death-plateau', 'troll-stronghold']);
+            tracker.completeQuests([
+                'rune-mysteries',
+                'imp-catcher'
+            ]);
 
             console.log(tracker.computeTotalRequirements('legends-quest'));
+
+            console.log(tracker.recommendNext());
         });
     });
 }).end();
@@ -86,6 +91,38 @@ function grep (array, key, value) {
     }
 };
 
+var XP = function () {
+    this.chart = {};
+
+    this.init = function () {
+        var xp, sum, last, diff;
+
+        for (var level = 1; level < 100; level++) {
+            last = xp;
+            sum = 0;
+
+            for (var x = 1; x <= level - 1; x++) {
+                sum += Math.floor(x + 300 * Math.pow(2, x / 7));
+            }
+
+            xp = Math.floor(sum / 4);
+
+            diff = xp - last;
+
+            this.chart[level] = {
+                xp: xp,
+                diff: diff
+            };
+        }
+    };
+
+    this.atLevel = function (level) {
+        return this.chart[level]['xp'];
+    };
+
+    this.init();
+};
+
 var Quests = function (questList, stats) {
     this.list = questList;
     this.stats = stats;
@@ -125,14 +162,10 @@ var Quests = function (questList, stats) {
         return quest.requirements;
     };
 
-    this.hasRequirements = function (questName) {
+    this.hasSkillRequirements = function (questName) {
         var hasStats = true;
-        var hasQuests = true;
-
         var quest = this.findQuest(questName);
-
         var skillReqs = quest.requirements.skills;
-        var questReqs = quest.requirements.quests;
 
         for (var i in skillReqs) {
             if (this.stats[i].level < skillReqs[i]) {
@@ -140,13 +173,25 @@ var Quests = function (questList, stats) {
             }
         }
 
+        return hasStats;
+    };
+
+    this.hasQuestRequirements = function (questName) {
+        var hasQuests = true;
+        var quest = this.findQuest(questName);
+        var questReqs = quest.requirements.quests;
+
         for (var i in questReqs) {
             if (!this.completed.list[questReqs[i]]) {
                 hasQuests = false;
             }
         }
 
-        return hasStats && hasQuests;
+        return hasQuests;
+    };
+
+    this.hasRequirements = function (questName) {
+        return this.hasRequirements(questName) && this.hasQuestRequirements(questName);
     };
 
     this.completeQuest = function (quest) {
@@ -197,15 +242,43 @@ var Quests = function (questList, stats) {
     };
 
     this.recommendNext = function () {
+        var xp = new XP();
         var recommended = [];
 
+        var neededExp = {};
+
         for (var i in this.list) {
-            if (this.completed.list[this.list[i]]) {
+            if (this.completed.list[this.list[i].slug]) {
                 continue;
             }
 
-            if (!this.hasRequirements(this.list[i].slug)) {
-                recommended.push(this.list[i].slug);
+            var skillReqs = this.list[i].requirements.skills;
+            var total = 0;
+
+            neededExp[this.list[i].slug] = 0;
+
+            for (var j in skillReqs) {
+
+                if (skillReqs[j] > this.stats[j].level) {
+                    neededExp[this.list[i].slug] += xp.atLevel(skillReqs[j]) - this.stats[j].xp;
+                }
+            }
+        }
+
+        var lowest = {};
+
+        for (var i in neededExp) {
+            if (typeof lowest.xp === 'undefined' || neededExp[i] < lowest.xp) {
+                lowest.quest = i;
+                lowest.xp = neededExp[i];
+
+                if (this.hasQuestRequirements(i)) {
+                    recommended.push(i);
+                }
+            } else if (lowest.xp === neededExp[i]) {
+                if (this.hasQuestRequirements(i)) {
+                    recommended.push(i);
+                }
             }
         }
 
