@@ -28,11 +28,11 @@ http.get(hiscoresUrl + playerName, function (res) {
 
             tracker.completeQuests(['black-knights-fortress', 'cooks-assistant', 'creature-of-fenkenstrain', 'demon-slayer', 'druidic-ritual', 'dorics-quest', 'the-digsite', 'dragon-slayer', 'elemental-workshop-1', 'elemental-workshop-2', 'fishing-contest', 'goblin-diplomacy', 'imp-catcher', 'the-knights-sword', 'pirates-treasure', 'priest-in-peril', 'prince-ali-rescue', 'the-restless-ghost', 'romeo-and-juliet', 'rune-mysteries', 'sheep-shearer', 'a-souls-bane', 'tears-of-guthix', 'vampire-slayer', 'waterfall-quest', 'witchs-potion', 'nature-spirit']);
 
+            console.log(tracker.computeTotalRequirements('legends-quest'));
+
             console.log(tracker.recommendNext());
 
             var xp = new XP();
-
-            console.log(xp.getLevel(stats.woodcutting.xp, 10000000));
         });
     });
 }).end();
@@ -220,9 +220,7 @@ var Quests = function (questList, stats) {
             var priorReqs = this.computeTotalRequirements(questReqs[i]);
 
             for (var j in priorReqs) {
-                if (typeof totalSkills[j] === 'undefined') {
-                    totalSkills[j] = priorReqs[j];
-                } else if (priorReqs[j] > totalSkills[j]) {
+                if (typeof totalSkills[j] === 'undefined' || priorReqs[j] > totalSkills[j]) {
                     totalSkills[j] = priorReqs[j];
                 }
             }
