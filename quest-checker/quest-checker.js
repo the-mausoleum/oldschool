@@ -28,7 +28,8 @@ http.get(hiscoresUrl + playerName, function (res) {
 
             tracker.completeQuests(['black-knights-fortress', 'cooks-assistant', 'creature-of-fenkenstrain', 'demon-slayer', 'druidic-ritual', 'dorics-quest', 'the-digsite', 'dragon-slayer', 'elemental-workshop-1', 'elemental-workshop-2', 'fishing-contest', 'goblin-diplomacy', 'imp-catcher', 'the-knights-sword', 'pirates-treasure', 'priest-in-peril', 'prince-ali-rescue', 'the-restless-ghost', 'romeo-and-juliet', 'rune-mysteries', 'sheep-shearer', 'a-souls-bane', 'tears-of-guthix', 'vampire-slayer', 'waterfall-quest', 'witchs-potion', 'nature-spirit']);
 
-            console.log(tracker.computeTotalRequirements('legends-quest'));
+            console.log(tracker.listRequirements('lunar-diplomacy'))
+            console.log(tracker.computeTotalRequirements('lunar-diplomacy'));
 
             console.log(tracker.recommendNext());
 
@@ -219,14 +220,27 @@ var Quests = function (questList, stats) {
         for (var i in questReqs) {
             var priorReqs = this.computeTotalRequirements(questReqs[i]);
 
-            for (var j in priorReqs) {
-                if (typeof totalSkills[j] === 'undefined' || priorReqs[j] > totalSkills[j]) {
-                    totalSkills[j] = priorReqs[j];
+            for (var j in priorReqs.skills) {
+                if (typeof totalSkills[j] === 'undefined' || priorReqs.skills[j] > totalSkills[j]) {
+                    totalSkills[j] = priorReqs.skills[j];
                 }
+            }
+
+            for (var j in priorReqs.quests) {
+                if (totalQuests.indexOf(priorReqs.quests[j]) === -1) {
+                    totalQuests.push(priorReqs.quests[j]);
+                }
+            }
+
+            if (totalQuests.indexOf(questReqs[i]) === -1) {
+                totalQuests.push(questReqs[i]);
             }
         }
 
-        return totalSkills;
+        return {
+            skills: totalSkills,
+            quests: totalQuests
+        };
     };
 
     this.recommendNext = function () {
