@@ -34,7 +34,7 @@ http.get(hiscoresUrl + playerName, function (res) {
 
             var xp = new XP();
 
-            console.log(xp.forLevel(99, stats.woodcutting.xp));
+            console.log(xp.getLevel(stats.woodcutting.xp, 10000000));
         });
     });
 }).end();
@@ -96,6 +96,20 @@ var XP = function () {
 
     this.forLevel = function (level, currExp) {
         return this.chart[level].xp - currExp;
+    };
+
+    this.getLevel = function (currExp, gainedExp) {
+        var newExp = parseInt(currExp) + parseInt(gainedExp);
+
+        for (var i = 1; i < 100; i++) {
+            if (newExp >= this.chart[i].xp) {
+                continue;
+            }
+
+            return i;
+        }
+
+        return 99;
     };
 
     this.init();
