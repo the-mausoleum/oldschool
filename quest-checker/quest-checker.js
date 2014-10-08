@@ -30,7 +30,7 @@ http.get(hiscoresUrl + playerName, function (res) {
 
             tracker.completeQuests(['death-plateau', 'troll-stronghold']);
 
-            console.log(tracker.getCompleted());
+            console.log(tracker.computeTotalRequirements('legends-quest'));
         });
     });
 }).end();
@@ -166,5 +166,49 @@ var Quests = function (questList, stats) {
             percent: Math.round((this.completed.count / this.list.length) * 100),
             quests: Object.keys(this.completed.list)
         };
+    };
+
+    this.computeTotalRequirements = function (questName) {
+        var quest = this.findQuest(questName);
+
+        var skillReqs = quest.requirements.skills;
+        var questReqs = quest.requirements.quests;
+
+        var totalSkills = {};
+        var totalQuests = [];
+
+        for (var i in skillReqs) {
+            totalSkills[i] = skillReqs[i];
+        }
+
+        for (var i in questReqs) {
+            var priorReqs = this.computeTotalRequirements(questReqs[i]);
+
+            for (var j in priorReqs) {
+                if (typeof totalSkills[j] === 'undefined') {
+                    totalSkills[j] = priorReqs[j];
+                } else if (priorReqs[j] > totalSkills[j]) {
+                    totalSkills[j] = priorReqs[j];
+                }
+            }
+        }
+
+        return totalSkills;
+    };
+
+    this.recommendNext = function () {
+        var recommended = [];
+
+        for (var i in this.list) {
+            if (this.completed.list[this.list[i]]) {
+                continue;
+            }
+
+            if (!this.hasRequirements(this.list[i].slug)) {
+                recommended.push(this.list[i].slug);
+            }
+        }
+
+        return recommended;
     };
 };
