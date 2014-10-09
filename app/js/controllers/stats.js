@@ -35,7 +35,7 @@ angular.module('OldSchool')
         };
 
         $scope.player = 'Max Deviant';
-        
+
         $scope.lookup = function () {
             $http.get('http://localhost:3000/stats/' + $scope.player)
                 .success(function (data, status, headers, config) {
