@@ -71,24 +71,6 @@ router.route('/stats/:username').get(function (req, res) {
     }
 });
 
-function extractStats(raw) {
-    var stats = {};
-
-    var skills = ['overall', 'attack', 'defence', 'strength', 'constitution', 'ranged', 'prayer', 'magic', 'cooking', 'woodcutting', 'fletching', 'fishing', 'firemaking', 'crafting', 'smithing', 'mining', 'herblore', 'agility', 'thieving', 'slayer', 'farming', 'runecrafting', 'hunter', 'construction'];
-
-    for (var i in skills) {
-        var row = raw[i].split(',');
-
-        stats[skills[i]] = {
-            rank: row[0],
-            level: row[1],
-            xp: row[2]
-        };
-    }
-
-    return stats;
-}
-
 app.use('/', router);
 
 app.listen(port);
