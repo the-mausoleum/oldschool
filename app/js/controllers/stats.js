@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('OldSchool')
-    .controller('StatsCtrl', ['$scope', '$http', function ($scope, $http) {
+    .controller('StatsCtrl', ['$scope', '$http', 'XP', function ($scope, $http, XP) {
         $scope.skills = {
             1: [
                 'attack',
@@ -44,9 +44,13 @@ angular.module('OldSchool')
             });
 
         $scope.generateTooltip = function (skill, exp) {
+            var xp = new XP();
+
             skill = skill.charAt(0).toUpperCase() + skill.slice(1);
 
-            var tooltip = skill + ' XP: ' + exp + '\u000ANext level at: ' + NaN + '\u000ARemaining XP: ' + NaN;
+            var currLevel = xp.getLevel(exp);
+
+            var tooltip = skill + ' XP: ' + exp + '\u000ANext level at: ' + xp.atLevel(currLevel) + '\u000ARemaining XP: ' + xp.forLevel(currLevel, exp);
 
             return tooltip;
         };
