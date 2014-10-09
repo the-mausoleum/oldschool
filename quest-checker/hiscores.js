@@ -34,7 +34,22 @@ router.route('/stats/:username').get(function (req, res) {
             });
         }
 
-        return res.status(200).json(data.join().split('\n'));
+        var skills = ['overall', 'attack', 'defence', 'strength', 'constitution', 'ranged', 'prayer', 'magic', 'cooking', 'woodcutting', 'fletching', 'fishing', 'firemaking', 'crafting', 'smithing', 'mining', 'herblore', 'agility', 'thieving', 'slayer', 'farming', 'runecrafting', 'hunter', 'construction'];
+
+        var raw = data.join().split('\n');
+        var stats = {};
+
+        for (var i in skills) {
+            var row = raw[i].split(',');
+
+            stats[skills[i]] = {
+                rank: row[0],
+                level: row[1],
+                xp: row[2]
+            };
+        }
+
+        return res.status(200).json(stats);
     });
 
     function getStats(username, callback) {
@@ -55,6 +70,24 @@ router.route('/stats/:username').get(function (req, res) {
         }).end();
     }
 });
+
+function extractStats(raw) {
+    var stats = {};
+
+    var skills = ['overall', 'attack', 'defence', 'strength', 'constitution', 'ranged', 'prayer', 'magic', 'cooking', 'woodcutting', 'fletching', 'fishing', 'firemaking', 'crafting', 'smithing', 'mining', 'herblore', 'agility', 'thieving', 'slayer', 'farming', 'runecrafting', 'hunter', 'construction'];
+
+    for (var i in skills) {
+        var row = raw[i].split(',');
+
+        stats[skills[i]] = {
+            rank: row[0],
+            level: row[1],
+            xp: row[2]
+        };
+    }
+
+    return stats;
+}
 
 app.use('/', router);
 
