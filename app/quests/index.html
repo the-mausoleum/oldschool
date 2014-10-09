@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quest Checker</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="../../src/helpers.js"></script>
+    <script src="../../src/xp.js"></script>
+    <script src="../../src/quests.js"></script>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        'use strict';
+
+        $.get('http://localhost:3000/stats/Max+Deviant', function (data) {
+            console.log(data);
+
+            var skills = ['overall', 'attack', 'defence', 'strength', 'constitution', 'ranged', 'prayer', 'magic', 'cooking', 'woodcutting', 'fletching', 'fishing', 'firemaking', 'crafting', 'smithing', 'mining', 'herblore', 'agility', 'thieving', 'slayer', 'farming', 'runecrafting', 'hunter', 'construction'];
+
+            for (var i in skills) {
+                $('.container').append('<div class=".' + skills[i] + '">' + skills[i].charAt(0).toUpperCase() + skills[i].slice(1) + ' ' + data[skills[i]].level + '</div>');
+            }
+        });
+
+        $.get('../../quest-checker/quests.json', function (data) {
+            console.log(data);
+        });
+    </script>
+</body>
+</html>
