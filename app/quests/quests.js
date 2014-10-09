@@ -12,6 +12,12 @@ $.get('../../quest-checker/quests.json', function (data) {
     console.log(data);
 });
 
+var done = ['creature-of-fenkenstrain', 'rune-mysteries'];
+
+for (var i in done) {
+    $('input[name="' + done[i] + '"]').prop('checked', true);
+}
+
 function generateQuestList(quests) {
     var built = '';
 
