@@ -1,0 +1,25 @@
+{
+  "name": "oldschool",
+  "version": "0.0.1",
+  "homepage": "https://github.com/maxdeviant/oldschool",
+  "authors": [
+    "Marshall Bowers <elliott.codes@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.26",
+    "angular-route": "~1.2.26",
+    "angular-ui-router": "~0.2.11"
+  }
+}
