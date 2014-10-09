@@ -12,6 +12,11 @@
     width: 60px;
 }
 
+.quests {
+    display: inline-block;
+    width: 960px;
+}
+
 .overall:before {
     content: url('../img/overall-icon.png');
 }
