@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.stats {
+    width: 960px;
+}
+
+.col {
+    float: left;
+    width: 60px;
+}
+
+.overall:before {
+    content: url('../img/overall-icon.png');
+}
+
+/* Column One */
+
+.attack:before {
+    content: url('../img/attack-icon.png');
+}
+
+.strength:before {
+    content: url('../img/strength-icon.png');
+}
+
+.defence:before {
+    content: url('../img/defence-icon.png');
+}
+
+.ranged:before {
+    content: url('../img/ranged-icon.png');
+}
+
+.prayer:before {
+    content: url('../img/prayer-icon.png');
+}
+
+.magic:before {
+    content: url('../img/magic-icon.png');
+}
+
+.runecrafting:before {
+    content: url('../img/runecrafting-icon.png');
+}
+
+.construction:before {
+    content: url('../img/construction-icon.png');
+}
+
+/* Colummn Two */
+
+.constitution:before {
+    content: url('../img/constitution-icon.png');
+}
+
+.agility:before {
+    content: url('../img/agility-icon.png');
+}
+
+.herblore:before {
+    content: url('../img/herblore-icon.png');
+}
+
+.thieving:before {
+    content: url('../img/thieving-icon.png');
+}
+
+.crafting:before {
+    content: url('../img/crafting-icon.png');
+}
+
+.fletching:before {
+    content: url('../img/fletching-icon.png');
+}
+
+.slayer:before {
+    content: url('../img/slayer-icon.png');
+}
+
+.hunter:before {
+    content: url('../img/hunter-icon.png');
+}
+
+/* Column Three */
+
+.mining:before {
+    content: url('../img/mining-icon.png');
+}
+
+.smithing:before {
+    content: url('../img/smithing-icon.png');
+}
+
+.fishing:before {
+    content: url('../img/fishing-icon.png');
+}
+
+.cooking:before {
+    content: url('../img/cooking-icon.png');
+}
+
+.firemaking:before {
+    content: url('../img/firemaking-icon.png');
+}
+
+.woodcutting:before {
+    content: url('../img/woodcutting-icon.png');
+}
+
+.farming:before {
+    content: url('../img/farming-icon.png');
+}

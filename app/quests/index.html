@@ -3,6 +3,8 @@
 <head>
     <title>Quest Checker</title>
 
+    <link rel="stylesheet" href="styles.css">
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script src="../../src/helpers.js"></script>
@@ -11,24 +13,39 @@
 </head>
 <body>
     <div class="container">
-
+        <div class="stats">
+            <div class="col first">
+                <div class="skill attack"></div>
+                <div class="skill strength"></div>
+                <div class="skill defence"></div>
+                <div class="skill ranged"></div>
+                <div class="skill prayer"></div>
+                <div class="skill magic"></div>
+                <div class="skill runecrafting"></div>
+                <div class="skill construction"></div>
+            </div>
+            <div class="col second">
+                <div class="skill constitution"></div>
+                <div class="skill agility"></div>
+                <div class="skill herblore"></div>
+                <div class="skill thieving"></div>
+                <div class="skill crafting"></div>
+                <div class="skill fletching"></div>
+                <div class="skill slayer"></div>
+                <div class="skill hunter"></div>
+            </div>
+            <div class="col third">
+                <div class="skill mining"></div>
+                <div class="skill smithing"></div>
+                <div class="skill fishing"></div>
+                <div class="skill cooking"></div>
+                <div class="skill firemaking"></div>
+                <div class="skill woodcutting"></div>
+                <div class="skill farming"></div>
+            </div>
+        </div>
     </div>
-    <script>
-        'use strict';
 
-        $.get('http://localhost:3000/stats/Max+Deviant', function (data) {
-            console.log(data);
-
-            var skills = ['overall', 'attack', 'defence', 'strength', 'constitution', 'ranged', 'prayer', 'magic', 'cooking', 'woodcutting', 'fletching', 'fishing', 'firemaking', 'crafting', 'smithing', 'mining', 'herblore', 'agility', 'thieving', 'slayer', 'farming', 'runecrafting', 'hunter', 'construction'];
-
-            for (var i in skills) {
-                $('.container').append('<div class=".' + skills[i] + '">' + skills[i].charAt(0).toUpperCase() + skills[i].slice(1) + ' ' + data[skills[i]].level + '</div>');
-            }
-        });
-
-        $.get('../../quest-checker/quests.json', function (data) {
-            console.log(data);
-        });
-    </script>
+    <script src="quests.js"></script>
 </body>
 </html>
