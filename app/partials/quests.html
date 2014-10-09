@@ -1,1 +1,6 @@
-Quests
+<div class="quests">
+<div class="quest" ng-repeat="quest in quests">
+        <input type="checkbox" name="{{quest.slug}}" ng-model="completed[quest.slug]" ng-change="updateQuestList(quest.slug)">
+        <span class="name">{{quest.name}}</span>
+    </div>
+</div>
