@@ -1,0 +1,17 @@
+<div class="stats">
+    <div class="col first">
+        <div class="skill {{skill}}" title="{{generateTooltip(skill, stats[skill].xp)}}" ng-repeat="skill in skills.1">
+            <span class="level">{{stats[skill].level}}</span>
+        </div>
+    </div>
+    <div class="col second">
+        <div class="skill {{skill}}" title="{{generateTooltip(skill, stats[skill].xp)}}" ng-repeat="skill in skills.2">
+            <span class="level">{{stats[skill].level}}</span>
+        </div>
+    </div>
+    <div class="col third">
+        <div class="skill {{skill}}" title="{{generateTooltip(skill, stats[skill].xp)}}" ng-repeat="skill in skills.3">
+            <span class="level">{{stats[skill].level}}</span>
+        </div>
+    </div>
+</div>
