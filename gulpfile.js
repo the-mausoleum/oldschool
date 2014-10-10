@@ -36,7 +36,8 @@ gulp.task('beautify', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(paths.js, ['lint', 'beautify']);
+    gulp.watch(paths.app, ['lint', 'beautify']);
+    gulp.watch(paths.server, ['lint', 'beautify']);
 });
 
 gulp.task('default', [
