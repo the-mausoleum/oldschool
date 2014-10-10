@@ -28,16 +28,21 @@
 .total {
     height: 30px;
     padding: 1px;
+    color: #fffa2a;
     background: #000;
-    line-height: .7;
+    line-height: .85;
     text-align: center;
     white-space: nowrap;
 }
 
-.total .level {
+.total .text {
     font-family: monospace;
     font-size: 8.5px;
-    color: #fffa2a;
+}
+
+.total .level {
+    font-family: monospace;
+    font-size: 12px;
 }
 
 .quests {
