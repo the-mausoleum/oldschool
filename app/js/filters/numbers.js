@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 angular.module('OldSchool')
     .filter('exp', function () {
@@ -6,5 +6,5 @@ angular.module('OldSchool')
             num = num || '';
 
             return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-        }
+        };
     });

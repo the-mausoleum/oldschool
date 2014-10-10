@@ -8,5 +8,5 @@ angular.module('OldSchool')
                     return array[i];
                 }
             }
-        }
+        };
     }]);

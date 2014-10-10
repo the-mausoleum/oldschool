@@ -174,5 +174,5 @@ angular.module('OldSchool')
 
                 return recommended;
             };
-        }
+        };
     }]);

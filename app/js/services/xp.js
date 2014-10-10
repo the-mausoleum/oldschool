@@ -50,5 +50,5 @@ angular.module('OldSchool')
             };
 
             this.init();
-        }
+        };
     }]);

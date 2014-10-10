@@ -3,6 +3,8 @@
     "-W004": true,
     "globals": {
         "require": false,
-        "console": false
+        "process": false,
+        "console": false,
+        "angular": false
     }
 }
