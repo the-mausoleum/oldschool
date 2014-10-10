@@ -27,6 +27,13 @@ angular.module('OldSchool').config(function ($stateProvider, $urlRouterProvider)
                 templateUrl: 'partials/quests-details.html'
             }
         }
+    }).state('404', {
+        url: '/404',
+        views: {
+            '': {
+                templateUrl: 'partials/404.html'
+            }
+        }
     });
 
     $urlRouterProvider.otherwise('404');
