@@ -25,6 +25,21 @@
     padding-left: 30px;
 }
 
+.total {
+    height: 30px;
+    padding: 1px;
+    background: #000;
+    line-height: .7;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.total .level {
+    font-family: monospace;
+    font-size: 8.5px;
+    color: #fffa2a;
+}
+
 .quests {
     display: inline-block;
     width: 960px;

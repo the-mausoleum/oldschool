@@ -20,13 +20,15 @@ angular.module('OldSchool').controller('StatsCtrl', ['$scope', '$filter', '$http
     $scope.generateTooltip = function (skill, exp) {
         var xp = new XP();
 
+        if (skill === 'overall') {
+            return 'Total XP: ' + $filter('exp')(exp);
+        }
+
         skill = $filter('capitalize')(skill);
 
         var currLevel = xp.getLevel(exp);
 
-        var tooltip = skill + ' XP: ' + $filter('exp')(exp) + '\u000ANext level at: ' + $filter('exp')(xp.atLevel(currLevel)) + '\u000ARemaining XP: ' + $filter('exp')(xp.forLevel(currLevel, exp));
-
-        return tooltip;
+        return skill + ' XP: ' + $filter('exp')(exp) + '\u000ANext level at: ' + $filter('exp')(xp.atLevel(currLevel)) + '\u000ARemaining XP: ' + $filter('exp')(xp.forLevel(currLevel, exp));
     };
 
     $scope.lookup();
