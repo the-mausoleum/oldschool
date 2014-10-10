@@ -13,6 +13,13 @@ angular.module('OldSchool')
 
                 if ($stateParams.slug) {
                     $scope.quest = grep($scope.quests, 'slug', $stateParams.slug);
+                    $scope.subquests = {};
+
+                    for (var i in $scope.quest.requirements.quests) {
+                        var slug = $scope.quest.requirements.quests[i];
+
+                        $scope.subquests[slug] = grep($scope.quests, 'slug', slug);
+                    }
                 }
             })
             .error(function (data, status, headers, config) {
