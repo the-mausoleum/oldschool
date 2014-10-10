@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('OldSchool')
-    .controller('QuestsCtrl', ['$scope', '$stateParams', '$http', 'grep', function ($scope, $stateParams, $http, grep) {
+    .controller('QuestsCtrl', ['$scope', '$stateParams', '$http', 'grep', 'Quests', function ($scope, $stateParams, $http, grep, Quests) {
         $scope.quests = [];
         $scope.completed = {};
 
