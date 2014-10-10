@@ -48,7 +48,7 @@ angular.module('OldSchool')
         $scope.generateTooltip = function (skill, exp) {
             var xp = new XP();
 
-            skill = skill.charAt(0).toUpperCase() + skill.slice(1);
+            skill = $filter('capitalize')(skill);
 
             var currLevel = xp.getLevel(exp);
 
