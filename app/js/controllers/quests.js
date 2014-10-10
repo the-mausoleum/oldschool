@@ -5,7 +5,7 @@ angular.module('OldSchool')
         $scope.quests = [];
         $scope.completed = {};
 
-        $http.get('../quest-checker/quests.json')
+        $http.get('../data/quests.json')
             .success(function (data, status, headers, config) {
                 $scope.quests = data;
             })
