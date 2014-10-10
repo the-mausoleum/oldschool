@@ -1,7 +1,11 @@
 <h1>{{quest.name}}</h1>
 
 <div class="requirements">
-    <div class="skill" ng-repeat="(skill, level) in quest.requirements.skills">
+    <div class="skills" ng-repeat="(skill, level) in quest.requirements.skills">
         <div class="skill {{skill}}"><span class="level">{{level}}</span></div>
+    </div>
+
+    <div class="quests" ng-repeat="quest in quest.requirements.quests">
+        <div class="quest">{{quest}}</div>
     </div>
 </div>
