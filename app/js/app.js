@@ -22,6 +22,15 @@ angular.module('OldSchool')
                         templateUrl: 'partials/quests.html'
                     }
                 }
+            })
+            .state('quests-details', {
+                url: '/quests/:slug',
+                views: {
+                    '': {
+                        controller: 'QuestsCtrl',
+                        templateUrl: 'partials/quests-details.html'
+                    }
+                }
             });
 
         $urlRouterProvider

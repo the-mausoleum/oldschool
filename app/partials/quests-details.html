@@ -1,0 +1,7 @@
+<h1>{{quest.name}}</h1>
+
+<div class="requirements">
+    <div class="skill" ng-repeat="(skill, level) in quest.requirements.skills">
+        <div class="skill {{skill}}"><span class="level">{{level}}</span></div>
+    </div>
+</div>

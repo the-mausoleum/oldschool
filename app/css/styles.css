@@ -16,6 +16,7 @@
 .skill {
     height: 30px;
     margin: 2px;
+    background: #464743;
 }
 
 .skill .level {
