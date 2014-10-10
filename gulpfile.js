@@ -4,22 +4,39 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var beautify = require('gulp-beautify');
 
-var path = 'quest-checker/*.js';
+var paths = {
+    app: 'app/js/*/*.js',
+    server: 'server/*.js'
+};
+
+var globs = [];
+
+for (var i in paths) {
+    globs.push(paths[i]);
+}
 
 gulp.task('lint', function () {
-    return gulp.src(path)
+    return gulp.src(globs)
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
 
 gulp.task('beautify', function () {
-    gulp.src(path)
-        .pipe(beautify({ indentSize: 4 }))
-        .pipe(gulp.dest('quest-checker'));
+    var options = {
+        indentSize: 4
+    };
+
+    gulp.src(paths.app)
+        .pipe(beautify(options))
+        .pipe(gulp.dest('app/js'));
+
+    gulp.src(paths.server)
+        .pipe(beautify(options))
+        .pipe(gulp.dest('server'));
 });
 
 gulp.task('watch', function () {
-    gulp.watch(path, ['lint', 'beautify']);
+    gulp.watch(paths.js, ['lint', 'beautify']);
 });
 
 gulp.task('default', [
