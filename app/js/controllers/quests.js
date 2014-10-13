@@ -31,6 +31,8 @@ angular.module('OldSchool').controller('QuestsCtrl', ['$scope', '$stateParams', 
             }
 
             $scope.tracker = new Quests($scope.quests, $scope.stats);
+
+            $scope.updateQuestList();
         }).error(function (data, status, headers, config) {
             console.log(data);
         });
