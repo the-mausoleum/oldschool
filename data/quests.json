@@ -15,6 +15,9 @@
                 "ernest-the-chicken",
                 "priest-in-peril"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -31,6 +34,9 @@
                 "the-giant-dwarf",
                 "the-digsite"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -47,6 +53,9 @@
                 "dwarf-cannon",
                 "fishing-contest"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -60,6 +69,9 @@
                     "ranged": 30
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -71,6 +83,9 @@
             "quests": [
                 "plague-city"
             ]
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -80,6 +95,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -97,6 +115,9 @@
                 "pirates-treasure",
                 "rum-deal"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -106,6 +127,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -120,6 +144,9 @@
                 "construction": 34
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -132,6 +159,9 @@
                 "prince-ali-rescue",
                 "icthlarins-little-helper"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -141,6 +171,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -156,6 +189,9 @@
                 "priest-in-peril",
                 "the-restless-ghost"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -175,6 +211,9 @@
             "quests": [
                 "in-aid-of-the-myreque"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -184,6 +223,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -198,6 +240,9 @@
             "quests": [
                 "the-lost-tribe"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -207,6 +252,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -228,6 +276,9 @@
                 "priest-in-peril",
                 "waterfall-quest"
             ]
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -245,6 +296,9 @@
                 "troll-stronghold",
                 "dorics-quest"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -258,6 +312,9 @@
                 "thieving": 25
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -267,6 +324,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -276,6 +336,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -288,6 +351,9 @@
                 "lunar-diplomacy",
                 "eadgars-ruse"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -297,6 +363,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 4
         }
     },
     {
@@ -308,6 +377,9 @@
                 "agility": 20
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -321,6 +393,9 @@
             "quests": [
                 "troll-stronghold"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -332,6 +407,9 @@
                 "hunter": 27
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -345,6 +423,9 @@
                 "crafting": 20
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -359,6 +440,9 @@
             "quests": [
                 "elemental-workshop-1"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -373,6 +457,9 @@
                 "magic": 39
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -386,6 +473,9 @@
                 "crafting": 36
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -395,6 +485,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 4
         }
     },
     {
@@ -409,6 +502,9 @@
             "quests": [
                 "the-grand-tree"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -421,6 +517,9 @@
                 "lost-city",
                 "nature-spirit"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -436,6 +535,9 @@
             "quests": [
                 "fairytale-1-growing-pains"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -450,6 +552,9 @@
                 "crafting": 40
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -461,6 +566,9 @@
                 "thieving": 30
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -470,6 +578,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -481,6 +592,9 @@
                 "fishing": 10
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -496,6 +610,9 @@
                 "the-giant-dwarf",
                 "fishing-contest"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -512,6 +629,9 @@
             "quests": [
                 "the-fremennik-trials"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -525,6 +645,9 @@
                 "crafting": 40
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -538,6 +661,9 @@
             "quests": [
                 "creature-of-fenkenstrain"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -547,6 +673,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -561,6 +690,9 @@
             "quests": [
                 "priest-in-peril"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -575,6 +707,9 @@
                 "thieving": 14
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -584,6 +719,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 5
         }
     },
     {
@@ -596,6 +734,9 @@
                 "thieving": 25
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -607,6 +748,9 @@
                 "agility": 25
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 5
         }
     },
     {
@@ -624,6 +768,9 @@
                 "cabin-fever",
                 "rum-deal"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -641,6 +788,9 @@
             "quests": [
                 "witchs-house"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -653,6 +803,9 @@
                 "crafting": 49
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -667,6 +820,9 @@
             "quests": [
                 "priest-in-peril"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -676,6 +832,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -695,6 +854,9 @@
                 "dragon-slayer",
                 "merlins-crystal"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -706,6 +868,9 @@
             "quests": [
                 "merlins-crystal"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -717,6 +882,9 @@
                 "agility": 35
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -728,6 +896,9 @@
             "quests": [
                 "gertrudes-cat"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -737,6 +908,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -753,6 +927,9 @@
                 "in-search-of-the-myreque",
                 "nature-spirit"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -766,6 +943,9 @@
             "quests": [
                 "nature-spirit"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -777,6 +957,9 @@
                 "herblore": 3
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -795,6 +978,9 @@
                 "one-small-favour",
                 "merlins-crystal"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -806,6 +992,9 @@
                 "mining": 10
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -832,6 +1021,9 @@
                 "underground-pass",
                 "waterfall-quest"
             ]
+        },
+        "rewards": {
+            "points": 4
         }
     },
     {
@@ -844,6 +1036,9 @@
                 "woodcutting": 36
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -860,6 +1055,9 @@
                 "goblin-diplomacy",
                 "rune-mysteries"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -882,6 +1080,9 @@
                 "rune-mysteries",
                 "shilo-village"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -898,6 +1099,9 @@
                 "priest-in-peril",
                 "the-restless-ghost"
             ]
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -907,6 +1111,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 6
         }
     },
     {
@@ -919,6 +1126,9 @@
                 "the-grand-tree",
                 "tree-gnome-village"
             ]
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -928,6 +1138,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -939,6 +1152,9 @@
                 "agility": 20
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -955,6 +1171,9 @@
                 "big-chompy-bird-hunting",
                 "sheep-herder"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -966,6 +1185,9 @@
             "quests": [
                 "mournings-ends-part-1"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -975,6 +1197,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -991,6 +1216,9 @@
                 "the-feud",
                 "jungle-potion"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1005,6 +1233,9 @@
                 "priest-in-peril",
                 "the-restless-ghost"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1016,6 +1247,9 @@
                 "crafting": 10
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1030,6 +1264,9 @@
             "quests": [
                 "the-fremennik-trials"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1048,6 +1285,9 @@
                 "shilo-village",
                 "druidic-ritual"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1057,6 +1297,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1066,6 +1309,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1075,6 +1321,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1084,6 +1333,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -1093,6 +1345,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1105,6 +1360,9 @@
                 "icthlarins-little-helper",
                 "the-giant-dwarf"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1136,6 +1394,9 @@
                 "desert-treasure",
                 "horror-from-the-deep"
             ]
+        },
+        "rewards": {
+            "points": 10
         }
     },
     {
@@ -1148,6 +1409,9 @@
                 "black-knights-fortress",
                 "druidic-ritual"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1161,6 +1425,9 @@
             "quests": [
                 "underground-pass"
             ]
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -1170,6 +1437,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1179,6 +1449,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 5
         }
     },
     {
@@ -1191,6 +1464,9 @@
                 "regicide",
                 "waterfall-quest"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1205,6 +1481,9 @@
             "quests": [
                 "throne-of-miscellania"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1222,6 +1501,9 @@
             "quests": [
                 "zogre-flesh-eaters"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1231,6 +1513,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1242,6 +1527,9 @@
                 "prayer": 31
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1253,6 +1541,9 @@
                 "firemaking": 30
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1268,6 +1559,9 @@
             "quests": [
                 "priest-in-peril"
             ]
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -1282,6 +1576,9 @@
                 "demon-slayer",
                 "the-golem"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1291,6 +1588,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 4
         }
     },
     {
@@ -1300,6 +1600,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1309,6 +1612,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1324,6 +1630,9 @@
             "quests": [
                 "jungle-potion"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1341,6 +1650,9 @@
                 "sea-slug",
                 "wanted"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1350,6 +1662,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1364,6 +1679,9 @@
                 "thieving": 37
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1383,6 +1701,9 @@
                 "one-small-favour",
                 "garden-of-tranquillity"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1398,6 +1719,9 @@
             "quests": [
                 "jungle-potion"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1409,6 +1733,9 @@
             "quests": [
                 "icthlarins-little-helper"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1422,6 +1749,9 @@
                 "mining": 20
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1434,6 +1764,9 @@
                 "ranged": 40
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1446,6 +1779,9 @@
                 "heroes-quest",
                 "the-fremennik-trials"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1458,6 +1794,9 @@
                 "smithing": 20
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1469,6 +1808,9 @@
                 "construction": 10
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1478,6 +1820,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1489,6 +1834,9 @@
                 "thieving": 21
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1503,6 +1851,9 @@
                 "death-plateau",
                 "troll-stronghold"
             ]
+        },
+        "rewards": {
+            "points": 2
         }
     },
     {
@@ -1516,6 +1867,9 @@
             "quests": [
                 "death-plateau"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1529,6 +1883,9 @@
             "quests": [
                 "biohazard"
             ]
+        },
+        "rewards": {
+            "points": 5
         }
     },
     {
@@ -1538,6 +1895,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 3
         }
     },
     {
@@ -1552,6 +1912,9 @@
                 "rune-mysteries",
                 "priest-in-peril"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1567,6 +1930,9 @@
                 "mining": 40
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 4
         }
     },
     {
@@ -1576,6 +1942,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1587,6 +1956,9 @@
                 "runecrafting": 35
             },
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1596,6 +1968,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 4
         }
     },
     {
@@ -1605,6 +1980,9 @@
         "requirements": {
             "skills": {},
             "quests": []
+        },
+        "rewards": {
+            "points": 1
         }
     },
     {
@@ -1623,6 +2001,9 @@
                 "big-chompy-bird-hunting",
                 "jungle-potion"
             ]
+        },
+        "rewards": {
+            "points": 1
         }
     }
 ]
