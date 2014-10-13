@@ -161,6 +161,6 @@
     background: green;
 }
 
-.recommended {
-    background: yellow;
+.recommended a {
+    color: yellow;
 }
