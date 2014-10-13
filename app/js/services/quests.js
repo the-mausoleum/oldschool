@@ -130,6 +130,27 @@ angular.module('OldSchool').factory('Quests', ['grep', 'XP', function (grep, XP)
             };
         };
 
+        this.computeNeededExp = function (questName) {
+            var xp = new XP();
+            var quest = this.findQuest(questName);
+            var skillReqs = quest.requirements.skills;
+            var neededExp = {
+                total: 0
+            };
+
+            for (var i in skillReqs) {
+                neededExp[i] = 0;
+
+                if (skillReqs[i] > this.stats[i].level) {
+                    neededExp[i] = xp.forLevel(skillReqs[i], this.stats[i].xp);
+
+                    neededExp.total += neededExp[i];
+                }
+            }
+
+            return neededExp;
+        };
+
         this.recommendNext = function () {
             var xp = new XP();
             var recommended = [];
@@ -142,16 +163,9 @@ angular.module('OldSchool').factory('Quests', ['grep', 'XP', function (grep, XP)
                 }
 
                 var skillReqs = this.list[i].requirements.skills;
-                var total = 0;
+                var slug = this.list[i].slug;
 
-                neededExp[this.list[i].slug] = 0;
-
-                for (var j in skillReqs) {
-
-                    if (skillReqs[j] > this.stats[j].level) {
-                        neededExp[this.list[i].slug] += xp.forLevel(skillReqs[j], this.stats[j].xp);
-                    }
-                }
+                neededExp[slug] = this.computeNeededExp(slug).total;
             }
 
             var lowest = {};
