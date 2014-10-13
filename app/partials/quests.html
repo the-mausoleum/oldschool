@@ -3,7 +3,7 @@
 <input type="checkbox" ng-model="viewOptions.showCompleted"> Show Completed
 
 <div class="quests">
-    <div class="quest" ng-repeat="quest in quests | filter: searchText" ng-hide="hideQuest(quest.slug)" ng-class="{recommended: isRecommended(quest.slug)}">
+    <div class="quest" ng-repeat="quest in quests | filter: searchText" ng-hide="hideQuest(quest.slug)" ng-class="{completable: isCompletable(quest.slug), recommended: isRecommended(quest.slug)}">
         <input type="checkbox" name="{{quest.slug}}" ng-model="tracker.completed.list[quest.slug]" ng-change="updateQuestList(quest.slug)">
         <span class="name"><a ui-sref="quests-details({ slug: quest.slug })">{{quest.name}}</a></span>
     </div>

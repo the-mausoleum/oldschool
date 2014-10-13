@@ -2,6 +2,7 @@
 
 angular.module('OldSchool').controller('QuestsCtrl', ['$scope', '$stateParams', '$http', 'grep', 'Quests', function ($scope, $stateParams, $http, grep, Quests) {
     $scope.quests = [];
+    $scope.completable = [];
     $scope.recommended = [];
 
     $scope.viewOptions = {
@@ -39,6 +40,11 @@ angular.module('OldSchool').controller('QuestsCtrl', ['$scope', '$stateParams', 
 
     $scope.updateQuestList = function (slug) {
         $scope.recommended = $scope.tracker.recommendNext();
+        $scope.completable = $scope.tracker.findAvailable();
+    };
+
+    $scope.isCompletable = function (slug) {
+        return $scope.completable.indexOf(slug) !== -1;
     };
 
     $scope.isRecommended = function (slug) {

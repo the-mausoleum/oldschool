@@ -157,6 +157,10 @@
 
 /* Quests */
 
-.recommended {
+.completable {
     background: green;
+}
+
+.recommended {
+    background: yellow;
 }
