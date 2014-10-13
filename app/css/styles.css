@@ -154,3 +154,9 @@
 .farming:before {
     content: url('../img/farming-icon.png');
 }
+
+/* Quests */
+
+.recommended {
+    background: green;
+}
