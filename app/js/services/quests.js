@@ -152,7 +152,6 @@ angular.module('OldSchool').factory('Quests', ['grep', 'XP', function (grep, XP)
         };
 
         this.recommendNext = function () {
-            var xp = new XP();
             var recommended = [];
 
             var neededExp = {};
