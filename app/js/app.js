@@ -3,7 +3,22 @@
 angular.module('OldSchool', ['ui.router']);
 
 angular.module('OldSchool').config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('stats', {
+    $stateProvider.state('home', {
+        url: '/',
+        views: {
+            '': {
+                templateUrl: 'partials/home.html'
+            },
+            'stats': {
+                controller: 'StatsCtrl',
+                templateUrl: 'partials/stats.html'
+            },
+            'quests': {
+                controller: 'QuestsCtrl',
+                templateUrl: 'partials/quests.html'
+            }
+        }
+    }).state('stats', {
         url: '/stats',
         views: {
             '': {
