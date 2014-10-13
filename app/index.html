@@ -22,8 +22,10 @@
     <script src="js/controllers/quests.js"></script>
 </head>
 <body>
-    <section ui-view></section>
-    <section class="stats-container" ui-view="stats"></section>
-    <section class="quests-container" ui-view="quests"></section>
+    <div class="wrapper">
+        <section ui-view></section>
+        <section class="stats-container" ui-view="stats"></section>
+        <section class="quests-container" ui-view="quests"></section>
+    </div>
 </body>
 </html>

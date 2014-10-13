@@ -3,11 +3,42 @@
     padding: 0;
 }
 
-.stats {
+.wrapper {
     width: 960px;
+    margin: 0 auto;
 }
 
-.col {
+.stats-container {
+    width: 25%;
+}
+
+.quests-container {
+    width: 75%;
+}
+
+/* Quests */
+
+.quests {
+    height: 85vh;
+    overflow-y: scroll;
+}
+
+.quest:nth-child(odd) {
+    background: #f5f5f5;
+}
+
+.quest a,
+.quest a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Stats */
+
+.stats {
+}
+
+.stats .col {
     float: left;
     width: 60px;
     background: #464743;
@@ -43,18 +74,6 @@
 .total .level {
     font-family: monospace;
     font-size: 12px;
-}
-
-.quests {
-    width: 960px;
-}
-
-.stats-container {
-    float: left;
-}
-
-.quests-container {
-    float: left;
 }
 
 .overall:before {
