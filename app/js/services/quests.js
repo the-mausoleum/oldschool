@@ -172,10 +172,10 @@ angular.module('OldSchool').factory('Quests', ['grep', 'XP', function (grep, XP)
 
             for (var i in neededExp) {
                 if (typeof lowest.xp === 'undefined' || neededExp[i] < lowest.xp) {
-                    lowest.quest = i;
-                    lowest.xp = neededExp[i];
-
                     if (this.hasQuestRequirements(i)) {
+                        lowest.quest = i;
+                        lowest.xp = neededExp[i];
+
                         recommended.push(i);
                     }
                 } else if (lowest.xp === neededExp[i]) {
