@@ -49,6 +49,14 @@
     width: 960px;
 }
 
+.stats-container {
+    float: left;
+}
+
+.quests-container {
+    float: left;
+}
+
 .overall:before {
     content: url('../img/overall-icon.png');
 }
