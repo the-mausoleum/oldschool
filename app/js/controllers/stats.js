@@ -28,7 +28,7 @@ angular.module('OldSchool').controller('StatsCtrl', ['$scope', '$filter', '$http
 
         var currLevel = xp.getLevel(exp);
 
-        return skill + ' XP: ' + $filter('exp')(exp) + '\u000ANext level at: ' + $filter('exp')(xp.atLevel(currLevel)) + '\u000ARemaining XP: ' + $filter('exp')(xp.forLevel(currLevel, exp));
+        return skill + ' XP: ' + $filter('exp')(exp) + '\u000aNext level at: ' + $filter('exp')(xp.atLevel(currLevel)) + '\u000aRemaining XP: ' + $filter('exp')(xp.forLevel(currLevel, exp));
     };
 
     $scope.lookup();
