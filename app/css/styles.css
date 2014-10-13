@@ -27,6 +27,14 @@
     background: #f5f5f5;
 }
 
+.quest.completable {
+    background: green;
+}
+
+.quest.recommended a {
+    color: yellow;
+}
+
 .quest a,
 .quest a:visited {
     color: #000;
@@ -180,14 +188,4 @@
 
 .farming:before {
     content: url('../img/farming-icon.png');
-}
-
-/* Quests */
-
-.completable {
-    background: green;
-}
-
-.recommended a {
-    color: yellow;
 }
