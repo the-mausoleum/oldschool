@@ -184,7 +184,7 @@ angular.module('OldSchool').factory('Quests', ['grep', 'XP', function (grep, XP)
                 }
             }
 
-            return recommended;
+            return [lowest.quest];
         };
     };
 }]);
