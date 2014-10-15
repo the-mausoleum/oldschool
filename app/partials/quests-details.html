@@ -5,8 +5,10 @@
         <div class="skill {{skill}}"><span class="level">{{level}}</span></div>
     </div>
 
-    <div class="quests" ng-repeat="quest in subquests">
-        <div class="quest"><a ui-sref="quests-details({ slug: quest.slug })">{{quest.name}}</a></div>
+    <div class="quests">
+        <div class="quest" ng-repeat="quest in subquests">
+            <a ui-sref="quests-details({ slug: quest.slug })">{{quest.name}}</a>
+        </div>
     </div>
 </div>
 
