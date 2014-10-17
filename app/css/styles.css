@@ -35,7 +35,7 @@
 }
 
 .quest.completable {
-    background: green;
+    background: #449d44;
 }
 
 .quest.recommended a {
